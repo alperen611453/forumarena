@@ -1,0 +1,211 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+a:hover {
+    color: #0056b3;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-links a, .nav-links span {
+    color: #fff;
+    margin-left: 15px;
+}
+.btn {
+    background-color: #007BFF;
+    color: white !important;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Ana konteyner */
+.main-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Kategori Menü */
+.kategori-menu {
+    margin: 25px 0 35px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.kategori-btn {
+    background-color: #1abc9c;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    display: inline-block;
+}
+.kategori-btn:hover {
+    background-color: #16a085;
+    text-decoration: none;
+}
+.kategori-btn.active {
+    background-color: #144d44;
+}
+
+/* Konu listesi */
+.thread-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.thread-card {
+    padding: 12px 16px;
+    margin-bottom: 14px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #007BFF;
+    border-radius: 4px;
+}
+.thread-card a {
+    font-size: 18px;
+    font-weight: 600;
+}
+.thread-card small {
+    color: #555;
+    font-size: 13px;
+}
+
+/* Login & Register Container */
+.login-container {
+    width: 320px;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-container h1 {
+    margin-bottom: 25px;
+    color: #007BFF;
+    font-weight: 700;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 18px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.login-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 13px 0;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-msg {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.success-msg {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .main-container {
+        padding: 20px;
+    }
+    .kategori-menu {
+        justify-content: center;
+    }
+    .login-container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+}
+}
